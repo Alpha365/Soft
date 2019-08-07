@@ -1,0 +1,55 @@
+public class Num{
+
+	public static void main(String[] args) {
+		
+		int data[] = null; //建一个空组
+		data = new int[10];/*开辟了一个长度为(1)的数组*/
+		
+		
+		data[0] = 10; 
+		data[1] = 90; // 第二个元素
+		data[2] = 20; 
+		data[3] = 30; 
+		data[4] = 40;   
+		data[5] = 60;    
+		data[6] = 70; 
+		data[7] = 80;
+		data[8] = 50;
+		data[9] = 5;
+
+		
+
+		
+		//排序所需要的次数   ,循环一次确定一个最大值并排序到最右边 ,
+	    for (int i = 1; i < 10; i++) {
+	      //内层循环控制到达位置   //i从1开始,循环到10 共十次 
+		  
+		  
+	        for (int j = 0; j < 9 ; j++) { //所需要遍历的数组内的元素
+	            if (data[j] > data[j + 1]) {//每次向右+1取得元素j和后一位
+				
+				
+	                int temp = data[j]; 						
+	                data[j] = data[j + 1];  //若左边比右边大  互换
+	                data[j + 1] = temp;
+	                
+	                
+	            }
+	        }
+	    }
+	    
+			
+			for(int m:data)  //for设定m在data内遍历
+			System.out.print(m+"    ");   //输出排序后的数组!
+			
+
+String[] arrayS = str.split("\\s+");
+for(int m:arrayS)  //for设定m在arrayS内遍历
+System.out.print(m+"\n");    //
+
+
+
+
+	}
+
+}
